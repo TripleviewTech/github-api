@@ -1,0 +1,19 @@
+{
+    "name": "tripleviewtech/github-api",
+    "description": "Contains Github API classes to be used in your project.",
+    "type": "library",
+    "require": {
+        "symfony/dotenv": "^6.0"
+    },
+    "authors": [
+        {
+            "name": "Pradeep Rathod",
+            "email": "prathod@tripleview.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./app"
+        }
+    }
+}
