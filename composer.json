@@ -2,6 +2,7 @@
     "name": "tripleviewtech/github-api",
     "description": "Contains Github API classes to be used in your project.",
     "type": "library",
+    "license": "MIT",
     "require": {
         "symfony/dotenv": "^6.0"
     },
