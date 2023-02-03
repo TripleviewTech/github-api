@@ -41,4 +41,12 @@ class GitHubClient extends RestClient {
     }
     return json_decode($this->client->get($strUrl)->response, true);
   }
+
+  public function getIssue($issueNumber, $options=[]){
+    $strUrl = $this->gitHubUrl . 'repos/' . $this->organization . '/adg-main/issues/'.$issueNumber;
+    if(!empty($options)){
+      $strUrl .= '?'.implode('&', $options);
+    }
+    return json_decode($this->client->get($strUrl)->response, true);
+  }
 }
